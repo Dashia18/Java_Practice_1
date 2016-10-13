@@ -30,7 +30,9 @@ public class Rectangle {
         return  perimeter;
     }
 
-    //public String toString(){ return "0";}
+    public String toString(){
+        return "Rectangle [length = " + _length + ", width = " + _width + "]";
+    }
 
     private  float _length;
     private  float _width;

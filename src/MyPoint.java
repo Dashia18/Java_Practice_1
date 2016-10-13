@@ -22,7 +22,9 @@ public class MyPoint {
         setX(x);
         setY(y);
     }
-    //public String toString(){ return "0";}
+    public String toString(){
+        return "point (" + _x + ", " + _y + ")";
+    }
 
     public double distance(int x, int y){
         double d = Math.sqrt(Math.pow((_x - x),2) + Math.pow((_y - y),2));

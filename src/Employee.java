@@ -30,7 +30,9 @@ public class Employee {
     }
 
 
-    //public String toString(){ return "0";}
+    public String toString(){
+        return "Employee [id = " + _id + ", name = " + _firstName + " " + _lastName + ", salary = "+ _salary + "]";
+    }
     private int _id;
     private  String _firstName;
     private  String _lastName;

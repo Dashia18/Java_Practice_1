@@ -22,7 +22,9 @@ public class Circle {
     public void setRadius(double radius){ _radius = radius;}
     public void setColor(String color){_color = color;}
 
-    //public String toString(){ return "0";}
+    public String toString(){
+        return "Circle [radius = " + _radius + ", collor = " + _color + "]";
+    }
     public double getArea(){
         double area = _radius*_radius*Math.PI;
         return area;

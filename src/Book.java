@@ -23,7 +23,11 @@ public class Book {
     public void setPrice(double price){ _price = price;}
     public int getQty(){ return _gty;}
     public void setQty(int qty){ _gty = qty;}
-    //public String toString(){ return "0";}
+    public String toString(){
+        return "Book [name = " + _name + ", authors = " + _authors + ", price = " + _price + ", gty = "+ _gty + "]";
+    }//AUTORS TBD
+
+
     //public String getAuthorNames(){}
 
 
