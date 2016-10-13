@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc3498ec-f182-4432-b158-0fef72af5674" name="Default" comment="Init commit, class Runner - main, class Circle, class Rectangle, class Employee, class Book + class Author - not finished. Method toString -didn`t done." />
+    <list default="true" id="dc3498ec-f182-4432-b158-0fef72af5674" name="Default" comment="Init commit, class Runner - main, class Circle, class Rectangle, class Employee, class Book + class Author - not finished. Method toString -didn`t done.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyTriangle.java" afterPath="$PROJECT_DIR$/src/MyTriangle.java" />
+    </list>
     <ignored path="first.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="MyTriangle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyTriangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#245#246#0" expanded="true" />
                 <element signature="e#336#337#0" expanded="true" />
@@ -640,7 +642,7 @@
       <workItem from="1476348791541" duration="1138000" />
       <workItem from="1476349990162" duration="1118000" />
       <workItem from="1476351134749" duration="507000" />
-      <workItem from="1476352555729" duration="3605000" />
+      <workItem from="1476352555729" duration="4111000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit, class Runner - main, class Circle, class Rectangle, class Employee, class Book + class Author - not finished. Method toString -didn`t done.">
       <created>1476350275538</created>
@@ -653,7 +655,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19771000" />
+    <option name="totallyTimeSpent" value="20277000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -915,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyTriangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#245#246#0" expanded="true" />
             <element signature="e#336#337#0" expanded="true" />
