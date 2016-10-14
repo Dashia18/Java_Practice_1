@@ -19,27 +19,27 @@ public class Circle {
     }
 
     public double getRadius() {
+
         return this.radius;
     }
 
     public String getColor() {
+
         return this.color;
     }
 
     public void setRadius(double radius) {
+
         this.radius = radius;
     }
 
     public void setColor(String color) {
+
         this.color = color;
     }
 
-    @Override
     public String toString() {
-        return "Circle{" +
-                "radius=" + radius +
-                ", color='" + color + '\'' +
-                '}';
+        return "Circle [radius = " + this.radius + ", collor = " + this.color + "]";
     }
 
     public double getArea() {
