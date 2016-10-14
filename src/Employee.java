@@ -2,39 +2,62 @@
  * Created by dbobkova on 12.10.2016.
  */
 public class Employee {
-    public Employee(int id, String firstName, String lastName, int salary){
-        _id = id;
-        _firstName = firstName;
-        _lastName = lastName;
-        _salary = salary;
+    public Employee(int id, String firstName, String lastName, int salary) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
     }
 
-    public int getID(){ return _id;}
-    public String getFirstName(){ return  _firstName;}
-    public String getLastName(){ return  _lastName;}
-    public String getName(){
-        String name = _firstName + " " + _lastName;
-        return  name;
+    public int getID() {
+        return id;
     }
-    public int getSalary(){return _salary;}
 
-    public void setSalary(int salary){ _salary = salary;}
-    public int getAnnualSalary(){
-        int annualSalary = _salary * 12;
-        return  annualSalary;
+    public String getFirstName() {
+        return firstName;
     }
-    public  int raiseSalary (int percent){
-        int newSalary = _salary + (_salary * percent)/100;
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getName() {
+        String name = firstName + " " + lastName;
+        return name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public int getAnnualSalary() {
+        int annualSalary = salary * 12;
+        return annualSalary;
+    }
+
+    public int raiseSalary(int percent) {
+        int newSalary = salary + (salary * percent) / 100;
         setSalary(newSalary);
         return newSalary;
     }
 
 
-    public String toString(){
-        return "Employee [id = " + _id + ", name = " + _firstName + " " + _lastName + ", salary = "+ _salary + "]";
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + firstName +
+                " " + lastName + '\'' +
+                ", salary=" + salary +
+                '}';
     }
-    private int _id;
-    private  String _firstName;
-    private  String _lastName;
-    private int _salary;
+
+    private int id;
+    private  String firstName;
+    private  String lastName;
+    private int salary;
 }
