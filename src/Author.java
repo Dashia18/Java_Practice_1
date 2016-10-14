@@ -1,8 +1,15 @@
 /**
- * Created by dbobkova on 12.10.2016.
+ * Created by Daria Serebryakova on 12.10.2016.
  */
 public class Author {
-    private String _name;
-    private String _email;
-    private char _gender;
+
+
+
+
+
+
+
+    private String name;
+    private String email;
+    private char gender;
 }

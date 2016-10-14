@@ -1,38 +1,45 @@
+import java.util.Arrays;
+
 /**
- * Created by dbobkova on 12.10.2016.
+ * Created by Daria Serebryakova on 12.10.2016.
  */
 public class Book {
     public Book(String name, Author[] authors, double price){
-        _name = name;
-        _authors =  authors;
-        _price = price;
+        this.name = name;
+        this.authors =  authors;
+        this.price = price;
     }
 
     public Book(String name, Author[] authors, double price, int gty){
-        _name = name;
-        _authors =  authors;
-        _price = price;
-        _gty = gty;
+        this.name = name;
+        this.authors =  authors;
+        this.price = price;
+        this.gty = gty;
 
     }
 
-    public String getName(){return _name;}
+    public String getName(){return name;}
     //public Author[] getAuthors(){     //return 0;  //}
 
-    public double getPrice(){return  _price;}
-    public void setPrice(double price){ _price = price;}
-    public int getQty(){ return _gty;}
-    public void setQty(int qty){ _gty = qty;}
-    public String toString(){
-        return "Book [name = " + _name + ", authors = " + _authors + ", price = " + _price + ", gty = "+ _gty + "]";
-    }//AUTORS TBD
+    public double getPrice(){return  price;}
+    public void setPrice(double price){ this.price = price;}
+    public int getQty(){ return gty;}
+    public void setQty(int qty){ this.gty = qty;}
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", authors=" + Arrays.toString(authors) +
+                ", price=" + price +
+                ", gty=" + gty +
+                '}';
+    }
+//public String getAuthorNames(){}
 
 
-    //public String getAuthorNames(){}
-
-
-    private String _name;
-    private Author[] _authors;
-    private double _price;
-    private int _gty;
+    private String name;
+    private Author[] authors;
+    private double price;
+    private int gty;
 }

@@ -1,5 +1,5 @@
 /**
- * Created by dbobkova on 12.10.2016.
+ * Created by Daria Serebryakova on 12.10.2016.
  */
 public class Rectangle {
     public Rectangle() {

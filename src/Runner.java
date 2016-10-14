@@ -1,5 +1,5 @@
 /**
- * Created by dbobkova on 12.10.2016.
+ * Created by Daria Serebryakova on 12.10.2016.
  */
 public class Runner {
     public static void main(String[] args) {
@@ -27,6 +27,11 @@ public class Runner {
         MyPoint littlePoint = new MyPoint(4, 2);
         System.out.print(littlePoint.toString());
         System.out.print("\n");
+
+        //MyTriangle
+        MyTriangle littleTriangle = new MyTriangle(1, 2, 5, 2, 5, 6);
+        System.out.printf(littleTriangle.toString());
+        System.out.printf("\n");
 
     }
 

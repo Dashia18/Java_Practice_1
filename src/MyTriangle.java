@@ -1,41 +1,43 @@
 /**
- * Created by dbobkova on 13.10.2016.
+ * Created by Daria Serebryakova on 13.10.2016.
  */
 public class MyTriangle {
-    public MyTriangle(int x1, int y1, int x2, int y2, int x3, int y3){
-        _v1.setXY(x1, y1);
-        _v2.setXY(x2, y2);
-        _v3.setXY(x3, y3);
-    }
-    public MyTriangle(MyPoint v1, MyPoint v2, MyPoint v3){
-        _v1.setXY(v1.getX(), v1.getY());
-        _v2.setXY(v2.getX(), v2.getY());
-        _v3.setXY(v3.getX(), v3.getY());
+    public MyTriangle(int x1, int y1, int x2, int y2, int x3, int y3) {
+        v1 = new MyPoint(x1, y1);
+        v2 = new MyPoint(x2, y2);
+        v3 = new MyPoint(x3, y3);
     }
 
-    public String toString(){
-        return "MyTriangle [v1 = (" + _v1.getX() + ", " + _v1.getY()+ "), v2 = (" +  _v2.getX() + ", " + _v2.getY()+ "), v3 = (" + _v3.getX() + ", " + _v3.getY() + ") ]";
+    public MyTriangle(MyPoint v1, MyPoint v2, MyPoint v3) {
+        this.v1 = v1;
+        this.v2 = v2;
+        this.v3 = v3;
     }
 
-    public double getPerimeter(){
-        double perimeter = _v1.distance(_v2) + _v2.distance(_v3) + _v3.distance(_v1);//P = a + b + c
+    @Override
+    public String toString() {
+        return "MyTriangle{" +
+                "v1=" + v1 +
+                ", v2=" + v2 +
+                ", v3=" + v3 +
+                '}';
+    }
+
+    public double getPerimeter() {
+        double perimeter = v1.distance(v2) + v2.distance(v3) + v3.distance(v1);//P = a + b + c
         return perimeter;
     }
-    public String getType(){
+
+    public String getType() {
         String type = "0";//Equilateral, Isosceles, Scalene
-        double a = _v1.distance(_v2);
-        double b = _v2.distance(_v3);
-        double c = _v3.distance(_v1);
-        if ((a == b) && (b == c) )
-        {
+        double a = v1.distance(v2);
+        double b = v2.distance(v3);
+        double c = v3.distance(v1);
+        if ((a == b) && (b == c)) {
             type = "Equilateral";
-        }
-        else if ((a == b) || (b == c))
-        {
+        } else if ((a == b) || (b == c)) {
             type = "Isosceles";
-        }
-        else
-        {
+        } else {
             type = "Scalene";
         }
 
@@ -43,7 +45,7 @@ public class MyTriangle {
     }
 
 
-    private MyPoint _v1;
-    private MyPoint _v2;
-    private MyPoint _v3;
+    private MyPoint v1;
+    private MyPoint v2;
+    private MyPoint v3;
 }
