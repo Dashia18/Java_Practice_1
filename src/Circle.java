@@ -2,36 +2,53 @@
  * Created by dbobkova on 12.10.2016.
  */
 public class Circle {
-    public Circle(){
-        _radius = 1.0;
-        _color = "red";
+    public Circle() {
+        this.radius = 1.0;
+        this.color = "red";
     }
-    public Circle(double radius){
 
-        _radius = radius;
-        _color = "red";
+    public Circle(double radius) {
+
+        this.radius = radius;
+        this.color = "red";
     }
-    public Circle(double radius, String color){
+
+    public Circle(double radius, String color) {
         setRadius(radius);
         setColor(color);
     }
 
-    public double getRadius(){return  _radius;}
-    public String getColor(){return  _color;}
-
-    public void setRadius(double radius){ _radius = radius;}
-    public void setColor(String color){_color = color;}
-
-    public String toString(){
-        return "Circle [radius = " + _radius + ", collor = " + _color + "]";
+    public double getRadius() {
+        return this.radius;
     }
-    public double getArea(){
-        double area = _radius*_radius*Math.PI;
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
+    public double getArea() {
+        double area = this.radius * this.radius * Math.PI;
         return area;
     }
 
-    private double _radius;
-    private String _color;
+    private double radius;
+    private String color;
 
 
 }
