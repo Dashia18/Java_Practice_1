@@ -20,8 +20,17 @@ public class Runner {
         System.out.print(firstEmployee.toString());
         System.out.print("\n");
 
+        //Author
+        Author firstAuthor = new Author("Bruce Eckel", "bruce.eckel@gmail.ru", 'm');
+        Author secondAuthor = new Author("Stiv Macconnell", "stiv.macconnell@gmail.ru", 'm');
+        Author[] authors = {firstAuthor, secondAuthor};
+
         //Book
-        //Book firstBook = new Book("Java",{"Bruce Eckel","Stiv Makkonnell"}, 999.99);
+        Book firstBook = new Book("Java",authors , 999.99);
+        System.out.print(firstBook.toString());
+        System.out.print("\n");
+        System.out.print(firstBook.getAuthorNames());
+        System.out.print("\n");
 
         //MyPoint
         MyPoint littlePoint = new MyPoint(4, 2);
