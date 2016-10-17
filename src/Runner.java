@@ -30,8 +30,8 @@ public class Runner {
 
         //MyTriangle
         MyTriangle littleTriangle = new MyTriangle(1, 2, 5, 2, 5, 6);
-        System.out.printf(littleTriangle.toString());
-        System.out.printf("\n");
+        System.out.print(littleTriangle.toString());
+        System.out.print("\n");
 
     }
 
